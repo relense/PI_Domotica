@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Compartimento</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: Compartimento</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>Compartimento</h2>
+        
+            <div class="class-description">Serve para agrupar equipamentos</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Compartimento"><span class="type-signature"></span>new Compartimento<span class="signature">(nome, consola, parent)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nome</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">nome para identificação do Compartimento</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>consola</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Consola.html">Consola</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">referência para a consola que criou este compartimento</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>parent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Consola.html">Consola</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">referência para a consola que criou este compartimento</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nome</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">nome para indentificar o compartimento</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>equipamentos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Array.html">Array</a>.&lt;<a href="Equipamento.html">Equipamento</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">conjunto de equipamentos associados ao Compartimento</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domotica.js.html">domotica.js</a>, <a href="domotica.js.html#line668">line 668</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="apagarEquipamento"><span class="type-signature"></span>apagarEquipamento<span class="signature">(nome)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Método para apagar equipamentos
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nome</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">nome do equipamento a apagar;</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domotica.js.html">domotica.js</a>, <a href="domotica.js.html#line748">line 748</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="apresentar"><span class="type-signature"></span>apresentar<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Método para apresentar o os equipamentos do compartimento na página HTML
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domotica.js.html">domotica.js</a>, <a href="domotica.js.html#line815">line 815</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="criaEquipamento"><span class="type-signature"></span>criaEquipamento<span class="signature">(nome)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Método para criar equipamentos
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nome</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">nome do tipo equipamento a criar;</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domotica.js.html">domotica.js</a>, <a href="domotica.js.html#line678">line 678</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="desenharEquipamento"><span class="type-signature"></span>desenharEquipamento<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Método que vai pegar em todos os equipamentos e chamar o método apresentar para que estes possam ser vistos no menu monotorizar
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domotica.js.html">domotica.js</a>, <a href="domotica.js.html#line1000">line 1000</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getEquipamentosTipo"><span class="type-signature"></span>getEquipamentosTipo<span class="signature">(tipo)</span><span class="type-signature"> &rarr; {<a href="Array.html">Array</a>.&lt;<a href="Equipamento.html">Equipamento</a>>}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Retorna todos os equipamentos do compartimento do tipo enviado
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tipo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Object.html">Object</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">definição do objecto</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domotica.js.html">domotica.js</a>, <a href="domotica.js.html#line800">line 800</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    - equipamentos da instância enviada como parâmetro
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Array.html">Array</a>.&lt;<a href="Equipamento.html">Equipamento</a>></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="monotorizar"><span class="type-signature"></span>monotorizar<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Método para apresentar os equipamentos do compartimento na página HTML de modo que possam ser monitorizados
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domotica.js.html">domotica.js</a>, <a href="domotica.js.html#line930">line 930</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ArCondicionado.html">ArCondicionado</a></li><li><a href="Atuador.html">Atuador</a></li><li><a href="Compartimento.html">Compartimento</a></li><li><a href="Consola.html">Consola</a></li><li><a href="DetetorFechoPorta.html">DetetorFechoPorta</a></li><li><a href="DetetorMovimento.html">DetetorMovimento</a></li><li><a href="Equipamento.html">Equipamento</a></li><li><a href="EstoreEletrico.html">EstoreEletrico</a></li><li><a href="GeradorMovimento.html">GeradorMovimento</a></li><li><a href="ImpactoGeral.html">ImpactoGeral</a></li><li><a href="ImpactoLocal.html">ImpactoLocal</a></li><li><a href="MotorElectrico.html">MotorElectrico</a></li><li><a href="Sensor.html">Sensor</a></li><li><a href="Termometro.html">Termometro</a></li><li><a href="TrincoElectrico.html">TrincoElectrico</a></li></ul><h3>Global</h3><ul><li><a href="global.html#adicionarOrganizar">adicionarOrganizar</a></li><li><a href="global.html#editHtmlLabel">editHtmlLabel</a></li><li><a href="global.html#editHtmlLabelArrays">editHtmlLabelArrays</a></li><li><a href="global.html#editHTMLTextNode">editHTMLTextNode</a></li><li><a href="global.html#editHTMLTextNodeWithSelection">editHTMLTextNodeWithSelection</a></li><li><a href="global.html#estadoEstore">estadoEstore</a></li><li><a href="global.html#estadoMovimento">estadoMovimento</a></li><li><a href="global.html#estadoTrinco">estadoTrinco</a></li><li><a href="global.html#existsInArray">existsInArray</a></li><li><a href="global.html#omissao">omissao</a></li><li><a href="global.html#selectModal">selectModal</a></li><li><a href="global.html#sistemaDomotico">sistemaDomotico</a></li><li><a href="global.html#tipoEquipamento">tipoEquipamento</a></li><li><a href="global.html#valoresOmissao">valoresOmissao</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Sun May 29 2016 22:12:36 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
